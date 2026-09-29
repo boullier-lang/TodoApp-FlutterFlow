@@ -1,0 +1,48 @@
+{
+  "title": "User",
+  "description": "Schema for user documents in the Todo application Firestore database",
+  "type": "object",
+  "properties": {
+    "email": {
+      "description": "The user's email address",
+      "type": "string",
+      "format": "email"
+    },
+    "display_name": {
+      "description": "The user's display name",
+      "type": "string"
+    },
+    "photo_url": {
+      "description": "The path to the user's profile image",
+      "type": "string"
+    },
+    "uid": {
+      "description": "The unique identifier of the user",
+      "type": "string"
+    },
+    "created_time": {
+      "description": "The date and time when the user account was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "phone_number": {
+      "description": "The user's phone number",
+      "type": "string"
+    },
+    "birthday": {
+      "description": "The user's date of birth",
+      "type": "string",
+      "format": "date-time"
+    },
+    "hometown": {
+      "description": "The user's hometown",
+      "type": "string"
+    }
+  },
+  "required": [
+    "email",
+    "display_name",
+    "uid",
+    "created_time"
+  ]
+}
